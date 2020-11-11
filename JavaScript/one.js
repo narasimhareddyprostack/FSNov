@@ -9,8 +9,11 @@ console.log("Type of is_Avail:", typeof(is_Avail))
 
 
 var is_Placed = null
-console.log("Type of is_Placed:", typeof(is_Placed))
+console.log("Type of is_Placed:", typeof(is_Placed))  // obj
 
 var obj = {"Name": 'Narasimha', 'email_Id':'greetlabs@gmail.com' }
+
+
+
 console.log("Type of obj:", typeof(obj))
 console.log(obj.email_Id)
