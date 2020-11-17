@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form>
+      <label> Product Name</label>
+      <input type="text" value="" onchange="nameHandler()" id="name" /><br />
+
+      <label> Product Price</label>
+      <input type="number" value="" /> <br />
+
+      <label> Brand</label>
+      <input
+        type="text"
+        value=""
+        onkeypress="pressHandler()"
+        id="press"
+      /><br />
+
+      <label> No Products </label>
+      <input type="Number" value="" /><br />
+
+      <label> Product Desc Desc </label>
+      <textarea rows="3" cols="50"></textarea><br />
+
+      <input type="submit" value="Submit" />
+      <button type="submit" value="Submit" onclick="buttonHandler()">
+        Reset
+      </button>
+    </form>
+    <script type="text/javascript">
+      function nameHandler() {
+        // alert("Hi");
+        //document.querySelector('name').value
+        console.log(document.querySelector("#name").value);
+      }
+      function pressHandler() {
+        console.log(document.querySelector("#press").value);
+      }
+      function buttonHandler() {
+        alert("button Clicked");
+      }
+    </script>
+  </body>
+</html>
