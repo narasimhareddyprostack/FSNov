@@ -1,0 +1,24 @@
+step 1: npm init -y 
+// install required dependencies
+step 2: npm install @babel/core 
+                    @babel/register  
+                    @babel/preset-env 
+                    babel-polyfill
+                    express morgan chalk 
+
+step 3: create express app ie app.js 
+step 4: .babelrc file in root 
+    {
+    "presets": ["@babel/preset-env"]
+    }
+
+
+step 5:  node entry point - ie start.js 
+        require("@babel/register")({});
+        module.exports = require("./app");
+
+
+how to start : nodemon start.js 
+
+----------------
+node js with es6 syntaxes
