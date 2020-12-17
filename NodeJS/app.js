@@ -1,10 +1,18 @@
 const express = require("express");
+
+const path = require("path");
+
 let app = express();
 
 const morgan = require("morgan");
 app.use(morgan("tiny"));
+
+// app.get("/", (req, res) => {
+//   res.send("Today Bundh, not in Bangalroe");
+// });
+
 app.get("/", (req, res) => {
-  res.send("Today Bundh, not in Bangalroe");
+  res.sendFile(path.join(__dirname, "index.html"));
 });
 app.get("/about", (req, res) => {
   res.send("Abount Us Page");
