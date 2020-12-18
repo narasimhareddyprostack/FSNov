@@ -5,7 +5,7 @@ const mongoClient = mongodb.MongoClient;
 
 let LOCAL_URL = "mongodb://127.0.0.1:27017/";
 let ClOUD_URL =
-  "mongodb+srv://narasimha:EoiXCop1BWEFDUeg@cluster0.quovr.mongodb.net/<dbname>?retryWrites=true&w=majority";
+  "mongodb+srv://narasimha:EoiXCop1BWEFDUeg@cluster0.quovr.mongodb.net/ecom-mr-one
 app.get("/", (req, res) => {
   res.send("Hello");
 });
