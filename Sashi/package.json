@@ -1,0 +1,20 @@
+{
+  "name": "create-dummy-api",
+  "version": "1.0.2",
+  "description": "GetAPI, POST API, PUT API, Delete API",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "nodejs",
+    "expres",
+    "js"
+  ],
+  "author": "narasimha Reddy",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "morgan": "^1.10.0"
+  }
+}

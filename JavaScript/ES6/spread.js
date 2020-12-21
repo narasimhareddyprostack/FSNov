@@ -7,6 +7,7 @@ let details = {
   mobile: 9591,
   address: "Marathahalli",
   email: "info@psa.com",
+  name:'Yogesh'
 };
     
 let userDetails = {
