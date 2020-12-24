@@ -3,4 +3,4 @@ import ReactDOM from "react-dom";
 
 import Rajini from "./App";
 
-ReactDOM.render(<Rajini />, document.getElementById("root"));
+ReactDOM.render(<Rajini />, document.getElementById("savithri"));
