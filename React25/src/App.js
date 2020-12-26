@@ -10,10 +10,10 @@ function App() {
   return (
     <div>
       <Navbar />
-      {/* <ProductList /> */}
+      <ProductList />
       {/* <Login /> */}
       {/* <Message /> */}
-      <Simple />
+      {/* <Simple /> */}
     </div>
   );
 }
