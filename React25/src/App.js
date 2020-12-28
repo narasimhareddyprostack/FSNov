@@ -6,14 +6,16 @@ import Login from "../src/Form/Login";
 import ProductList from "./components/Products/ProductList";
 import Message from "./components/EventBinding/Message";
 import Simple from "./components/EventBinding/Simple";
+import Signin from "./FormHandling/Signin";
 function App() {
   return (
     <div>
       <Navbar />
-      <ProductList />
+      {/* <ProductList /> */}
       {/* <Login /> */}
       {/* <Message /> */}
       {/* <Simple /> */}
+      <Signin />
     </div>
   );
 }
