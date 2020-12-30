@@ -76,5 +76,7 @@ step 2: To update state obj property, we need to use setState({})
 
 step 3: implete eventhandler - methods to update setState method, with event Object
 
+        Form - event Obj? to get the form element data
+
         email:event.target.value.
 */
