@@ -5,12 +5,18 @@ export class Signin extends Component {
     email: "",
     password: "",
   };
-  inputHandler = (event) => {
+  emailHandler = (event) => {
+    console.log(event.target.value);
     this.setState({
-      [event.target.name]: event.target.value,
+      email: event.target.value,
     });
   };
-
+  passwordHandler = (event) => {
+    console.log(event.target.value);
+    this.setState({
+      password: event.target.value,
+    });
+  };
   btnHandler = (event) => {
     event.preventDefault();
     alert(JSON.stringify(this.state));
@@ -33,8 +39,7 @@ export class Signin extends Component {
                       placeholder="email"
                       value={email}
                       className="form-control"
-                      onChange={this.inputHandler}
-                      name="email"
+                      onChange={this.emailHandler}
                     />
                   </div>
                   <input
@@ -42,18 +47,12 @@ export class Signin extends Component {
                     placeholder="password"
                     value={password}
                     className="form-control"
-                    onChange={this.inputHandler}
-                    name="password"
+                    onChange={this.passwordHandler}
                   />
                 </div>
-                {1 ? (
-                  <button className="btn btn-success" onClick={this.btnHandler}>
-                    {" "}
-                    Login
-                  </button>
-                ) : (
-                  ""
-                )}
+                <button className="btn btn-success" onClick={this.btnHandler}>
+                  Login
+                </button>
               </form>
             </div>
           </div>
