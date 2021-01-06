@@ -1,10 +1,15 @@
-import React, { Component, Consumer } from "react";
+import React from "react";
 
-import userContext from "./userContext";
+import UserContext from "./userContext";
+
 function CompC(props) {
   return (
     <React.Fragment>
-      <userContext.Consumer>{props.user}</userContext.Consumer>
+      <UserContext.Consumer>
+        {(user) => {
+          return <span>{JSON.stringify(user)}</span>;
+        }}
+      </UserContext.Consumer>
     </React.Fragment>
   );
 }

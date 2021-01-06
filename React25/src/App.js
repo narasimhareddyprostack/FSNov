@@ -1,14 +1,12 @@
-import React, { Provider } from "react";
-
-import CompA from "./ContextAPI/CompA";
-import userContext from "./ContextAPI/userContext";
+import React from "react";
+import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
+import Counter from "./Hooks/Counter";
+import Login from "./Hooks/Login";
 let App = () => {
-  let userName = "Narasimha";
   return (
     <>
-      <userContext.Provider user={userName}>
-        <CompA />
-      </userContext.Provider>
+      <Counter />
+      <Login />
     </>
   );
 };
