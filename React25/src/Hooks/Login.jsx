@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-
 let Login = () => {
   let [user, setUser] = useState({ email: "", password: "" });
   let inputHandler = (event) => {
@@ -8,11 +7,13 @@ let Login = () => {
       [event.target.name]: event.target.value,
     });
   };
-
+  let getLoginDetaisl = (event) => {
+    console.log(user);
+  };
   return (
     <>
       <pre>{JSON.stringify(user)}</pre>
-      <form>
+      <form onSubmit={getLoginDetaisl}>
         <div className="form-group">
           <label for="inputEmail">Email</label>
           <input
