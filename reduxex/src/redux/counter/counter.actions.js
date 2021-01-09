@@ -1,5 +1,11 @@
-import { INCR } from "./counter.actiontypes";
+import { INCR, DECR } from "./counter.actiontypes";
 
-return { type: INCR };
+let incrAction = () => {
+  console.log("inside incr action");
+  return { type: INCR, Karthik: "Good Boy" };
+};
 
-
+let decrAction = () => {
+  return { type: DECR };
+};
+export { incrAction, decrAction };

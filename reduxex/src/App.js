@@ -1,10 +1,13 @@
 import React from "react";
 import Counter from "./components/Counter";
-
+import { Provider } from "react-redux";
+import store from "./redux/store";
 function App() {
   return (
     <React.Fragment>
-      <Counter />
+      <Provider store={store}>
+        <Counter />
+      </Provider>
     </React.Fragment>
   );
 }

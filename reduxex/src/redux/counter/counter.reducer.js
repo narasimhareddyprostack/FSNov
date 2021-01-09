@@ -1,16 +1,21 @@
 import { INCR, DECR } from "./counter.actiontypes";
 
 let initialstate = {
-  counter: 0,
+  counterNumber: 100,
 };
 
 function counterReducer(state = initialstate, action) {
-  switch (1) {
-    case 1:
-      return {};
-    case 2:
-      return {};
-
+  console.log("inside Reducer");
+  let { type } = action;
+  switch (type) {
+    case INCR:
+      return {
+        counterNumber: state.counterNumber + 1,
+      };
+    case DECR:
+      return {
+        counterNumber: state.counterNumber - 1,
+      };
     default:
       return state;
   }
